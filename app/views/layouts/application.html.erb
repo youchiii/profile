@@ -13,11 +13,29 @@
 </head>
 
 <body>
-      <header class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <span class="navbar-brand mb-0 h1">Yousei's Profile</span>
-        </div>
-    </header>
+  <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <span class="navbar-brand mb-0 h1">Yousei's Profile</span>
+      <i class="fa-solid fa-person"><%= link_to "自己紹介", root_path %></i>
+      <i class="fa-solid fa-address-card"><%= link_to "記事", homes_index_path %></i>
+    </div>
+  </header>
   <%= yield %>
+  <footer class="bg-light text-center text-lg-start mt-auto py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h5 class="text-uppercase">URL</h5>
+          <p><a href="https://github.com/youchiii" target="_blank">GitHub</a></p>
+          <p><a href="https://www.sangi.ac.jp/course/future/" target="_brank">静岡産業技術専門学校(みらい情報科)</a></p>
+          <p><a href="https://www.teikyo-u.ac.jp/faculties/correspondence/science_tech" target="_brank">帝京大学(理工学部　情報科学科　通信教育課程)</a></p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3 bg-dark text-white">
+      © 2024 Yousei's Profile. All rights reserved.
+    </div>
+  </footer>
 </body>
 </html>
