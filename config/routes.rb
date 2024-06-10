@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  Rails.application.routes.draw do
+    get 'greetings', to: 'greetings#show'
+  end
+
   root to: "homes#top"
   get 'homes/new'
   get 'homes/index'

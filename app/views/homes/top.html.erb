@@ -8,6 +8,7 @@
 <body>
 
     <div class="container text-center mt-3">
+        <h1><%= raw @greeting %></h1>
         <h1>自己紹介</h1>
         <img class="myphoto mb-3" src="myphoto2.png" alt="My Photo">
         <h1>望月陽星</h1>
@@ -19,6 +20,7 @@
         <p>2022年4月静岡産業技術専門学校 みらい情報科に入学(現在3年生)</p>
         <p>大学と4年制専門学校を併修中</p>
         <p>大学２年生(2023年7月)から株式会社インフラトップの長期インターンシップに参加。Ruby on Railsのメンター業務を行っています。</p>
+        <%= link_to "API", greetings_path %>
   </div>
     </div>
 </body>
